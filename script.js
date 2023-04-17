@@ -1,6 +1,5 @@
 function fibonacci(num) {
-// your code here
-	if (num < 0 || num > 50) {
+  if (num < 0 || num > 50) {
     return null;
   } else if (num === 0) {
     return 0;
@@ -18,5 +17,6 @@ function fibonacci(num) {
     return current;
   }
 }
+
 
 module.exports = fibonacci;
