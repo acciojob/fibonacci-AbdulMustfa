@@ -1,22 +1,14 @@
 function fibonacci(num) {
-  if (num < 0 || num > 50) {
-    return null;
-  } else if (num === 0) {
+  if (num === 0) {
     return 0;
   } else if (num === 1) {
     return 1;
   } else {
-    let prevPrev = 0;
-    let prev = 1;
-    let current;
+    let fibList = [0, 1];
     for (let i = 2; i <= num; i++) {
-      current = prevPrev + prev;
-      prevPrev = prev;
-      prev = current;
+      fibList.push(fibList[i - 1] + fibList[i - 2]);
     }
-    return current;
+    return fibList[num];
   }
 }
-
-
 module.exports = fibonacci;
