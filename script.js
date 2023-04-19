@@ -26,4 +26,4 @@ function fibonacci(num) {
   return fibonacciHelper(num);
 }
 // calculate the 10th Fibonacci number (should be 55)
-console.log(fibonacci(10));
+console.log(fibonacci(num));
